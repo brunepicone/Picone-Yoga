@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Picone Yoga</title>
+<meta name="description" content="Sala de Vinyasa yoga en Villa Allende Golf, Córdoba. Clases para comenzar, intermedias, avanzadas, stretching, adultos mayores, niños y jóvenes. Reservá tu lugar por WhatsApp.">
+<meta property="og:title" content="Picone Yoga · Villa Allende Golf">
+<meta property="og:description" content="Vinyasa yoga en una sala cálida, en grupos de hasta 18 personas. Escribinos por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/sala.webp">
+<link rel="icon" href="img/ele-rosa.webp">
+<meta name="theme-color" content="#7E8456">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Quicksand:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Picone Yoga","description":"Sala de Vinyasa yoga en Villa Allende Golf","telephone":"+5493512534493","address":{"@type":"PostalAddress","streetAddress":"Calle Progreso, Villa Allende Golf","addressLocality":"Villa Allende","addressRegion":"Córdoba","addressCountry":"AR"},"hasMap":"https://maps.app.goo.gl/4ECbhMJah8LgkjN6A","sameAs":["https://www.instagram.com/picone.yoga/","https://www.tiktok.com/@soypiconeyoga"],"priceRange":"$35.000 - $50.000"}
+</script>
+<style>
+/* Layout: olive hero with the pink elephant as the thesis, then pink-paper sections that read like the studio's own printed grilla; one sticky WhatsApp pill on phones */
+:root{
+  --olive:#7E8456; --olive-deep:#4B5A2E; --pink:#F1C2CD; --pink-soft:#F7E1E6; --paper:#FBF0F2; --card:#FFF8F9;
+  --ink:#3E4A26; --ink-soft:#66704A; --line:#E7C9D0; --sage:#D3DDB8; --rose:#E7A9B8;
+  --hero-bg:var(--olive); --hero-ink:#FBEFF2; --cta-bg:var(--olive-deep); --cta-ink:#FBEFF2;
+  --display:"Cormorant Garamond","Cormorant",Georgia,"Times New Roman",serif;
+  --body:"Quicksand","Nunito","Avenir Next",system-ui,sans-serif;
+  --r:22px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#23281A; --card:#2C3221; --pink-soft:#333A26; --ink:#F3DDE2; --ink-soft:#C9C2B0; --line:#454D33;
+  --sage:#56603A; --rose:#9C5E6D; --hero-bg:#3A4224; --cta-bg:#F1C2CD; --cta-ink:#2E361C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#23281A; --card:#2C3221; --pink-soft:#333A26; --ink:#F3DDE2; --ink-soft:#C9C2B0; --line:#454D33;
+  --sage:#56603A; --rose:#9C5E6D; --hero-bg:#3A4224; --cta-bg:#F1C2CD; --cta-ink:#2E361C; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;text-wrap:balance;margin:0;line-height:1.05}
+p{margin:0}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding-inline:20px}
+section{padding-block:72px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft)}
+.h2{font-size:clamp(38px,6vw,58px);font-style:italic}
+.lead{color:var(--ink-soft);max-width:58ch}
+.head{display:grid;gap:10px;margin-bottom:36px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--body);font-weight:600;font-size:15px;text-decoration:none;border-radius:999px;padding:14px 24px;transition:transform .35s cubic-bezier(.2,.8,.2,1),background .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,.chip:focus-visible,summary:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.btn-wa{background:var(--pink);color:var(--olive-deep)}
+.btn-main{background:var(--cta-bg);color:var(--cta-ink)}
+.btn-ghost{border:1.5px solid currentColor;color:inherit}
+.ico{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{background:var(--hero-bg);color:var(--hero-ink);padding-block:28px 0;overflow:hidden}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-weight:700;letter-spacing:.3em;font-size:13px;color:var(--pink)}
+.nav a.small{font-size:14px;font-weight:600;text-decoration:none;opacity:.9}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:48px 64px}
+.ele{width:min(320px,70%);margin:0 0 18px -6px;animation:walk 1.4s cubic-bezier(.2,.8,.2,1) both}
+@keyframes walk{from{transform:translateX(-18px);opacity:.4}to{transform:none;opacity:1}}
+.hero h1{font-size:clamp(46px,7.4vw,84px);font-style:italic;color:#FBEFF2}
+.hero h1 span{color:var(--pink)}
+.hero .sub{margin-top:18px;font-size:17px;max-width:44ch;color:#EDE6D6}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;font-size:14px;color:#E5DFC9}
+.facts span{display:inline-flex;gap:8px;align-items:center}
+.facts span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--pink)}
+.hero-photo{position:relative;border-radius:200px 200px var(--r) var(--r);overflow:hidden;aspect-ratio:3/4;max-width:100%;box-shadow:0 30px 60px -30px rgba(30,35,15,.6)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(251,240,242,.92);color:var(--olive-deep);font-size:13px;font-weight:600;padding:7px 14px;border-radius:999px}
+
+/* sala gallery */
+.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.gallery figure{margin:0;border-radius:var(--r);overflow:hidden;position:relative}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figure:first-child{grid-row:span 2}
+.gallery figcaption{position:absolute;left:12px;bottom:12px;font-size:13px;font-weight:600;background:rgba(251,240,242,.9);color:var(--olive-deep);padding:6px 12px;border-radius:999px}
+.g-wide{grid-column:span 2}
+.sala-notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
+.sala-notes div{border-top:1.5px solid var(--line);padding-top:14px}
+.sala-notes b{display:block;font-family:var(--display);font-size:24px;font-weight:600;font-style:italic}
+.sala-notes p{font-size:14px;color:var(--ink-soft)}
+
+/* clases */
+#clases{background:var(--pink-soft)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+@media (min-width:1000px){.cards{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.card.help{background:var(--hero-bg);color:#FBEFF2;border-color:transparent}.card.help p{color:#E5DFC9}
+.card{background:var(--card);border-radius:var(--r);padding:24px;display:grid;gap:12px;align-content:start;border:1px solid var(--line)}
+.tag{justify-self:start;font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;letter-spacing:.04em}
+.t-start{border:1.5px solid var(--rose);color:var(--ink)}
+.t-mid{background:#8F9C68;color:#FBF7EE}
+.t-adv{background:var(--olive-deep);color:#FBF7EE}
+.t-stretch{background:var(--sage);color:var(--ink)}
+.t-rose{background:var(--rose);color:#3E2A30}
+.card h3{font-size:30px;font-style:italic}
+.card p{font-size:14.5px;color:var(--ink-soft)}
+.when{font-size:14px;font-weight:600;display:grid;gap:2px;font-variant-numeric:tabular-nums}
+.when small{font-weight:500;color:var(--ink-soft);font-size:13px}
+.card .btn{margin-top:4px;padding:11px 18px;font-size:14px;justify-self:start}
+
+/* grilla */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{font-family:var(--body);font-size:14px;font-weight:600;padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--cta-bg);color:var(--cta-ink);border-color:transparent}
+.days{display:grid;gap:12px}
+.day{display:grid;grid-template-columns:150px 1fr;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;align-items:center}
+.day h3{font-size:30px;font-style:italic}
+.slots{display:grid;gap:8px}
+.slot{display:grid;grid-template-columns:56px minmax(0,1fr) 70px;gap:14px;align-items:center;font-size:14px;font-variant-numeric:tabular-nums}
+.slot .tag{justify-self:stretch;text-align:center;font-size:13px;padding:6px 10px}
+.slot .who{color:var(--ink-soft)}
+
+/* planes */
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.plan{border:1.5px solid var(--line);border-radius:var(--r);padding:28px;display:grid;gap:10px;align-content:start;background:var(--card)}
+.plan.pick{background:var(--hero-bg);color:#FBEFF2;border-color:transparent}
+.plan.pick .muted{color:#E5DFC9}
+.plan .name{font-family:var(--display);font-style:italic;font-size:28px}
+.price{font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.price small{font-size:14px;font-weight:500}
+.muted{color:var(--ink-soft);font-size:14px}
+.badge{justify-self:start;font-size:12px;font-weight:700;background:var(--pink);color:var(--olive-deep);padding:4px 12px;border-radius:999px}
+.plan .btn{margin-top:8px}
+
+/* historia */
+.story{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.story img{border-radius:var(--r) var(--r) 200px 200px;aspect-ratio:3/4;object-fit:cover;width:100%;max-width:100%}
+.story .body{display:grid;gap:16px}
+.story .body p{max-width:56ch}
+.quote{font-family:var(--display);font-style:italic;font-size:clamp(26px,3.4vw,34px);line-height:1.2;color:var(--ink)}
+.initials{display:flex;gap:10px;font-family:var(--display);font-style:italic;font-size:22px;color:var(--rose)}
+
+/* talleres + faq + lugar */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px;display:grid;gap:14px;align-content:start}
+.panel h3{font-size:32px;font-style:italic}
+details{border-bottom:1px solid var(--line);padding-block:16px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:20px;line-height:1;color:var(--rose);transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:10px;color:var(--ink-soft);font-size:15px;max-width:62ch}
+.final{background:var(--hero-bg);color:#FBEFF2;text-align:center}
+.final .ele{width:180px;margin:0 auto 10px;animation:none}
+.final h2{font-size:clamp(40px,6vw,64px);font-style:italic}
+.final p{color:#E5DFC9;margin:14px auto 26px;max-width:46ch}
+footer{background:var(--hero-bg);color:#D9D3BC;font-size:13px;padding-block:22px 96px;border-top:1px solid rgba(251,239,242,.15)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--pink);text-decoration:none;font-weight:600}
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:10;background:#25D366;color:#0B3B1E;box-shadow:0 12px 30px -10px rgba(0,0,0,.4)}
+.reveal{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+@media (max-width:860px){
+  section{padding-block:56px}
+  .hero-grid{grid-template-columns:1fr;padding-block:32px 48px;gap:32px}
+  .hero-photo{aspect-ratio:4/5;border-radius:160px 160px var(--r) var(--r)}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gallery figure{aspect-ratio:3/4}
+  .gallery figure:first-child{grid-row:auto;grid-column:span 2;aspect-ratio:4/5}
+  .g-wide{grid-column:span 2;aspect-ratio:4/3!important}
+  .sala-notes,.plans,.split,.story{grid-template-columns:1fr}
+  .story{gap:28px}
+  .day{grid-template-columns:1fr;padding:18px}
+  .slot{grid-template-columns:48px minmax(0,1fr) 54px;gap:10px}
+}
+@media (min-width:861px){.float{display:none}}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol></svg>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Principal">
+      <span class="brand">PICONE YOGA</span>
+      <a class="small" href="#horarios">Horarios y precios</a>
+    </nav>
+    <div class="hero-grid">
+      <div class="reveal">
+        <img class="ele" src="img/ele-rosa.webp" alt="Elefante de Picone Yoga">
+        <h1>Respirá, movete,<br><span>volvé a vos.</span></h1>
+        <p class="sub">Sala de Vinyasa yoga en Villa Allende Golf. Clases para todos los niveles, en grupos chicos y con profes que te acompañan desde la primera clase.</p>
+        <div class="ctas">
+          <a class="btn btn-wa" href="https://wa.me/5493512534493?text=Hola%20Picone%20Yoga!%20Quiero%20info%20para%20empezar%20a%20practicar%20%F0%9F%A7%98" target="_blank" rel="noopener"><svg class="ico"><use href="#wa"/></svg>Quiero empezar</a>
+          <a class="btn btn-ghost" href="#clases">Ver clases</a>
+        </div>
+        <div class="facts"><span>Villa Allende Golf</span><span>Hasta 18 por clase</span><span>Lunes a viernes</span></div>
+      </div>
+      <figure class="hero-photo"><img src="img/sala.webp" alt="Interior de la sala Picone Yoga con piso de madera y pared verde"><figcaption>Así es la salita</figcaption></figure>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="sala">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">La sala</span><h2 class="h2">Un lugar cálido para practicar</h2><p class="lead">Piso de madera, luz natural, salida al jardín y un rincón con cuencos y Ganesha. Todo pensado para que llegues, te saques el día de encima y respires.</p></div>
+    <div class="gallery">
+      <figure><img src="img/altar.webp" alt="Pared verde con el logo del elefante, cuencos tibetanos y una escultura de Ganesha" loading="lazy"><figcaption>El rincón de la meditación sonora</figcaption></figure>
+      <figure><img src="img/jardin.webp" alt="Ventanal de la sala que da al jardín" loading="lazy"><figcaption>Vista al jardín</figcaption></figure>
+      <figure><img src="img/mat.webp" alt="Mat verde con el elefante de Picone Yoga" loading="lazy"><figcaption>Tenemos mats</figcaption></figure>
+      <figure class="g-wide"><img src="img/frente.webp" alt="Frente de la sala con un árbol y la puerta de vidrio" loading="lazy"><figcaption>La entrada</figcaption></figure>
+    </div>
+    <div class="sala-notes">
+      <div><b>18 lugares</b><p>Grupos chicos para que la profe te vea y te corrija.</p></div>
+      <div><b>Mats y mantas</b><p>Si no tenés mat, usás uno de la sala.</p></div>
+      <div><b>Climatizada</b><p>Aire acondicionado y ventilador para todo el año.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="clases">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Clases de Vinyasa yoga</span><h2 class="h2">Encontrá tu práctica</h2><p class="lead">Si nunca hiciste yoga, empezá por "Para comenzar". Si ya practicás, elegí según tu nivel. Tocá el botón de cada clase y te respondemos por WhatsApp.</p></div>
+    <div class="cards">
+      <article class="card"><span class="tag t-start">Para comenzar</span><h3>Yoga inicial</h3><p>Para arrancar la mañana con energía. Aprendés las posturas base y a respirar con el movimiento.</p><div class="when">Miércoles y viernes · 8 a 9 h<small>Prof. Brune Picone</small></div><a class="btn btn-main" data-clase="Yoga inicial (mié y vie 8 h)" target="_blank" rel="noopener">Quiero esta clase</a></article>
+      <article class="card"><span class="tag t-mid">Intermedia</span><h3>Práctica intermedia</h3><p>El cuerpo se mueve, la respiración guía y vas un poquito más profundo hacia vos.</p><div class="when">Lun y mié · 17:30 o 19 h<br>Mar y jue · 19 h<small>Prof. Ani Picone</small></div><a class="btn btn-main" data-clase="Práctica intermedia" target="_blank" rel="noopener">Quiero esta clase</a></article>
+      <article class="card"><span class="tag t-adv">Avanzada</span><h3>Práctica avanzada</h3><p>Desafiante y consciente. Ideal para profes y practicantes con experiencia.</p><div class="when">Martes y jueves · 20:15 h<small>Prof. Ani Picone</small></div><a class="btn btn-main" data-clase="Práctica avanzada (mar y jue 20:15)" target="_blank" rel="noopener">Quiero esta clase</a></article>
+      <article class="card"><span class="tag t-stretch">Stretching</span><h3>Stretch &amp; Flex</h3><p>Flexibilidad y movilidad con estiramientos y movimientos conscientes.</p><div class="when">Lunes y miércoles · 16 h<small>Prof. Giuli Capra</small></div><a class="btn btn-main" data-clase="Stretch & Flex (lun y mié 16 h)" target="_blank" rel="noopener">Quiero esta clase</a></article>
+      <article class="card"><span class="tag t-rose">Adultos mayores</span><h3>Yoga suave</h3><p>Una práctica amable para moverse con cuidado, ganar equilibrio y sentirse bien.</p><div class="when">Miércoles y viernes · 9:30 h</div><a class="btn btn-main" data-clase="Adultos mayores (mié y vie 9:30)" target="_blank" rel="noopener">Quiero esta clase</a></article>
+      <article class="card"><span class="tag t-start">Niños · 6 a 12 años</span><h3>Yoga infancias</h3><p>Un espacio para respirar, jugar y conectar con lo que sienten.</p><div class="when">Viernes · 17 h<small>Prof. Eliana Cogliandro</small></div><a class="btn btn-main" data-clase="Yoga infancias (vie 17 h)" target="_blank" rel="noopener">Quiero esta clase</a></article>
+      <article class="card"><span class="tag t-rose">Jóvenes · 14 a 21 años</span><h3>Yoga jóvenes</h3><p>Movilidad, flexibilidad y presencia para escuchar el propio cuerpo.</p><div class="when">Viernes · 18:30 h<small>Prof. Pao Picone</small></div><a class="btn btn-main" data-clase="Yoga jóvenes (vie 18:30)" target="_blank" rel="noopener">Quiero esta clase</a></article>
+      <article class="card help"><span class="tag" style="background:var(--pink);color:var(--olive-deep)">¿Dudás?</span><h3>Te ayudamos a elegir</h3><p>Contanos si ya practicaste y qué horarios te quedan cómodos. Te recomendamos la clase justa.</p><a class="btn btn-wa" data-clase="que me recomienden (no sé cuál elegir)" target="_blank" rel="noopener">Recomendame una</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="horarios">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Grilla semanal</span><h2 class="h2">Horarios</h2></div>
+    <div class="chips" role="group" aria-label="Filtrar por nivel">
+      <button class="chip" id="f-all" data-f="all" aria-pressed="true">Todas</button>
+      <button class="chip" id="f-start" data-f="start" aria-pressed="false">Para comenzar</button>
+      <button class="chip" id="f-mid" data-f="mid" aria-pressed="false">Intermedia</button>
+      <button class="chip" id="f-adv" data-f="adv" aria-pressed="false">Avanzada</button>
+      <button class="chip" id="f-other" data-f="other" aria-pressed="false">Stretching, niños y más</button>
+    </div>
+    <div class="days" id="days"></div>
+  </div>
+</section>
+
+<section id="precios" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Planes mensuales</span><h2 class="h2">Elegí cuántas veces venir</h2></div>
+    <div class="plans">
+      <div class="plan"><span class="name">1 vez por semana</span><span class="price">$35.000 <small>/ mes</small></span><p class="muted">4 clases al mes en el horario que elijas.</p><a class="btn btn-ghost" data-plan="1 vez por semana" target="_blank" rel="noopener">Elegir este plan</a></div>
+      <div class="plan pick"><span class="badge">El más elegido</span><span class="name">2 veces por semana</span><span class="price">$50.000 <small>/ mes</small></span><p class="muted">8 clases al mes. Es el ritmo que más se nota en el cuerpo.</p><a class="btn btn-wa" data-plan="2 veces por semana" target="_blank" rel="noopener">Elegir este plan</a></div>
+      <div class="plan"><span class="name">Pase libre</span><span class="price" style="font-size:24px">Consultanos</span><p class="muted">Venís a todas las clases de tu nivel que quieras.</p><a class="btn btn-ghost" data-plan="Pase libre" target="_blank" rel="noopener">Consultar</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="historia" style="background:var(--pink-soft)">
+  <div class="wrap story">
+    <img src="img/jardin.webp" alt="La sala abierta al jardín" loading="lazy">
+    <div class="body">
+      <span class="eyebrow">Nuestra historia</span>
+      <h2 class="h2">Una sala hecha en familia</h2>
+      <p class="quote">Picone Yoga nació en casa, entre una mamá que enseña yoga hace muchos años y una hija que creció en el mat.</p>
+      <p>En 2026 decidimos construir nuestro propio lugar, en el fondo de casa, en Villa Allende Golf. Lo levantamos de a poco, eligiendo cada madera y cada color, para que se sienta como llegar a un lugar conocido.</p>
+      <p>El elefante que nos representa lleva en sus patas las letras M, K, A y P. Camina tranquilo y con pasos firmes, como buscamos que sea cada práctica.</p>
+      <div class="initials" aria-hidden="true"><span>M</span><span>K</span><span>A</span><span>P</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="mas">
+  <div class="wrap split">
+    <div class="panel">
+      <span class="eyebrow">Para profes</span>
+      <h3>Talleres y eventos</h3>
+      <p class="muted">Hacemos talleres sábados por medio a la mañana. Si sos profe y querés dar tus clases o un taller en la sala, escribinos y te contamos las condiciones.</p>
+      <a class="btn btn-main" style="justify-self:start" href="https://wa.me/5493512534493?text=Hola!%20Soy%20profe%20y%20quiero%20info%20para%20usar%20la%20sala%20para%20talleres%20o%20clases" target="_blank" rel="noopener">Quiero usar la sala</a>
+    </div>
+    <div class="panel">
+      <span class="eyebrow">Cómo llegar</span>
+      <h3>Villa Allende Golf</h3>
+      <p class="muted">Sobre calle Progreso, Villa Allende, Córdoba. Te pasamos la dirección exacta por WhatsApp cuando reservás.</p>
+      <a class="btn btn-ghost" style="justify-self:start" href="https://maps.app.goo.gl/4ECbhMJah8LgkjN6A" target="_blank" rel="noopener">Abrir en Google Maps</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:56px">
+    <div class="head"><span class="eyebrow">Preguntas frecuentes</span><h2 class="h2">Antes de venir</h2></div>
+    <details><summary>Nunca hice yoga. ¿Puedo ir?</summary><p>Sí. La clase "Para comenzar" está pensada para eso: vas aprendiendo las posturas base a tu ritmo y la profe te acompaña en cada paso.</p></details>
+    <details><summary>¿Qué tengo que llevar?</summary><p>Ropa cómoda y agua. Si tenés mat traelo; si no, usás uno de la sala.</p></details>
+    <details><summary>¿Cuántas personas hay por clase?</summary><p>Hasta 18. Así la profe puede verte y corregirte.</p></details>
+    <details><summary>¿Cómo me inscribo?</summary><p>Escribinos por WhatsApp, te decimos si hay lugar en el horario que querés y cómo pagar el mes.</p></details>
+    <details><summary>¿Puedo combinar horarios?</summary><p>Sí, mientras sean de tu nivel. Con el plan de 2 veces por semana o el pase libre elegís los días que te queden mejor.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <img class="ele" src="img/ele-rosa.webp" alt="" aria-hidden="true">
+    <h2>Te esperamos en la salita</h2>
+    <p>Escribinos, contanos qué buscás y te recomendamos la clase justa para vos.</p>
+    <a class="btn btn-wa" href="https://wa.me/5493512534493?text=Hola%20Picone%20Yoga!%20Quiero%20reservar%20mi%20lugar" target="_blank" rel="noopener"><svg class="ico"><use href="#wa"/></svg>Reservar por WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Picone Yoga · Villa Allende Golf, Córdoba · WhatsApp 351 253-4493</span>
+    <span><a href="https://www.instagram.com/picone.yoga/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@soypiconeyoga" target="_blank" rel="noopener">TikTok</a></span>
+  </div>
+</footer>
+
+<a class="btn float" href="https://wa.me/5493512534493?text=Hola%20Picone%20Yoga!%20Quiero%20info%20de%20las%20clases" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg class="ico"><use href="#wa"/></svg>Escribinos</a>
+
+<script>
+const WA='https://wa.me/5493512534493?text=';
+document.querySelectorAll('[data-clase]').forEach(a=>{a.href=WA+encodeURIComponent('Hola Picone Yoga! Me interesa la clase '+a.dataset.clase+'. ¿Hay lugar?')});
+document.querySelectorAll('[data-plan]').forEach(a=>{a.href=WA+encodeURIComponent('Hola Picone Yoga! Quiero el plan '+a.dataset.plan+'. ¿Cómo sigo?')});
+const T={start:['t-start','Para comenzar'],mid:['t-mid','Práctica intermedia'],adv:['t-adv','Práctica avanzada'],str:['t-stretch','Stretching'],may:['t-rose','Adultos mayores'],kid:['t-start','Niños'],jov:['t-rose','Jóvenes']};
+const G=[['Lunes',[['16:00','str','Giuli'],['17:30','mid','Ani'],['19:00','mid','Ani']]],['Martes',[['19:00','mid','Ani'],['20:15','adv','Ani']]],['Miércoles',[['8:00','start','Brune'],['9:30','may',''],['16:00','str','Giuli'],['17:30','mid','Ani'],['19:00','mid','Ani']]],['Jueves',[['19:00','mid','Ani'],['20:15','adv','Ani']]],['Viernes',[['8:00','start','Brune'],['9:30','may',''],['17:00','kid','Eli'],['18:30','jov','Pao']]]];
+const grp=k=>['start','mid','adv'].includes(k)?k:'other';
+function render(f){const box=document.getElementById('days');box.innerHTML='';G.forEach(([d,s])=>{const v=s.filter(x=>f==='all'||grp(x[1])===f);if(!v.length)return;const el=document.createElement('div');el.className='day';el.innerHTML='<h3>'+d+'</h3><div class="slots">'+v.map(([h,k,w])=>'<div class="slot"><span>'+h+'</span><span class="tag '+T[k][0]+'">'+T[k][1]+'</span><span class="who">'+w+'</span></div>').join('')+'</div>';box.appendChild(el)})}
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===c));render(c.dataset.f)}));
+render('all');
+</script>
+
+</body>
+</html>
