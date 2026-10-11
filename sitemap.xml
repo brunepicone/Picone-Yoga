@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://picone-yoga.vercel.app/</loc><lastmod>2026-10-11</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://picone-yoga.vercel.app/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <image:image><image:loc>https://picone-yoga.vercel.app/img/altar.webp</image:loc></image:image>
+    <image:image><image:loc>https://picone-yoga.vercel.app/img/sala.webp</image:loc></image:image>
+    <image:image><image:loc>https://picone-yoga.vercel.app/img/jardin.webp</image:loc></image:image>
+    <image:image><image:loc>https://picone-yoga.vercel.app/img/frente.webp</image:loc></image:image>
+    <image:image><image:loc>https://picone-yoga.vercel.app/img/mat.webp</image:loc></image:image>
+  </url>
 </urlset>
