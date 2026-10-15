@@ -52,9 +52,9 @@
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"¿Dónde hacer yoga en Villa Allende?","acceptedAnswer":{"@type":"Answer","text":"Picone Yoga es una sala de Vinyasa yoga en el barrio Villa Allende Golf, sobre calle Progreso. Hay clases de lunes a viernes, a la mañana y a la tarde-noche, para todos los niveles."}},
 {"@type":"Question","name":"¿Cuánto cuesta una clase de yoga en Villa Allende?","acceptedAnswer":{"@type":"Answer","text":"En Picone Yoga el plan de 1 vez por semana cuesta $35.000 por mes y el de 2 veces por semana $50.000 por mes. También hay pase libre."}},
-{"@type":"Question","name":"Nunca hice yoga. ¿Puedo empezar?","acceptedAnswer":{"@type":"Answer","text":"Sí. La clase Para comenzar, los miércoles y viernes de 8 a 9 h, está pensada para principiantes."}},
+{"@type":"Question","name":"Nunca hice yoga. ¿Puedo empezar?","acceptedAnswer":{"@type":"Answer","text":"Sí. La clase Para comenzar, los miércoles y viernes de 8 a 9 h, está pensada para principiantes y se centra en flexibilidad y fuerza."}},
 {"@type":"Question","name":"¿Hay yoga para adultos mayores y para niños en Villa Allende?","acceptedAnswer":{"@type":"Answer","text":"Sí. Adultos mayores: miércoles y viernes 9:30 h. Niños de 6 a 12 años: viernes 17 h. Jóvenes de 14 a 21 años: viernes 18:30 h."}},
-{"@type":"Question","name":"¿Qué tengo que llevar a la clase de yoga?","acceptedAnswer":{"@type":"Answer","text":"Ropa cómoda y agua. La sala tiene mats y mantas."}}]}
+{"@type":"Question","name":"¿Qué tengo que llevar a la clase de yoga?","acceptedAnswer":{"@type":"Answer","text":"Ropa cómoda y agua. La sala tiene mats, bloques y mantas. Conviene llegar 10 minutos antes de cada clase."}}]}
 ]}
 </script>
 <style>
@@ -114,7 +114,7 @@ section{padding-block:72px}
 .hero-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(251,240,242,.92);color:var(--olive-deep);font-size:13px;font-weight:600;padding:7px 14px;border-radius:999px}
 
 /* sala gallery */
-.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px}
+.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px 260px;gap:14px}
 .gallery figure{margin:0;border-radius:var(--r);overflow:hidden;position:relative}
 .gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
 .gallery figure:hover img{transform:scale(1.04)}
@@ -156,6 +156,8 @@ section{padding-block:72px}
 .slot .tag{justify-self:stretch;text-align:center;font-size:13px;padding:6px 10px}
 .slot .who{color:var(--ink-soft)}
 
+.arrive{margin-top:18px;font-weight:600;color:var(--ink);display:flex;gap:10px;align-items:center}
+.arrive::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--rose);flex:none}
 /* planes */
 .plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
 .plan{border:1.5px solid var(--line);border-radius:var(--r);padding:28px;display:grid;gap:10px;align-content:start;background:var(--card)}
@@ -174,7 +176,8 @@ section{padding-block:72px}
 .story .body{display:grid;gap:16px}
 .story .body p{max-width:56ch}
 .quote{font-family:var(--display);font-style:italic;font-size:clamp(26px,3.4vw,34px);line-height:1.2;color:var(--ink)}
-.initials{display:flex;gap:10px;font-family:var(--display);font-style:italic;font-size:22px;color:var(--rose)}
+.initials{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--display);font-style:italic;font-size:26px;color:var(--ink)}
+.initials b{color:var(--rose);font-weight:600;font-size:34px}
 
 .team{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .member{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
@@ -219,7 +222,7 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
   .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}
   .gallery figure{aspect-ratio:3/4}
   .gallery figure:first-child{grid-row:auto;grid-column:span 2;aspect-ratio:4/5}
-  .g-wide{grid-column:span 2;aspect-ratio:4/3!important}
+  .g-wide,.g-m-wide{grid-column:span 2;aspect-ratio:4/3!important}
   .sala-notes,.plans,.split,.story{grid-template-columns:1fr}
   .story{gap:28px}
   .day{grid-template-columns:1fr;padding:18px}
@@ -260,14 +263,16 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
   <div class="wrap">
     <div class="head"><span class="eyebrow">La sala</span><h2 class="h2">Un lugar cálido para practicar</h2><p class="lead">Piso de madera, luz natural, salida al jardín y un rincón con cuencos y Ganesha. Todo pensado para que llegues, te saques el día de encima y respires.</p></div>
     <div class="gallery">
-      <figure><img width="825" height="1100" src="img/sala.webp" alt="Interior de la sala con piso de madera, mats y la pared verde al fondo" loading="lazy"><figcaption>Espacio para 18 mats</figcaption></figure>
-      <figure><img width="825" height="1100" src="img/jardin.webp" alt="Ventanal de la sala que da al jardín" loading="lazy"><figcaption>Vista al jardín</figcaption></figure>
-      <figure><img width="901" height="901" src="img/mat.webp" alt="Mat verde con el elefante de Picone Yoga" loading="lazy"><figcaption>Tenemos mats</figcaption></figure>
+      <figure><img width="825" height="1100" src="img/clase.webp" alt="Profesora de Picone Yoga guiando una meditación frente a la pared verde con el elefante rosa" loading="lazy"><figcaption>Clase de inauguración</figcaption></figure>
+      <figure><img width="825" height="1100" src="img/puesto.webp" alt="Mat lila con bloque, manta y almohadilla para los ojos sobre el piso de madera" loading="lazy"><figcaption>Tu lugar, listo para practicar</figcaption></figure>
+      <figure><img width="825" height="1100" src="img/regalos.webp" alt="Almohadillas de tela con la marca Picone Yoga, señaladores y velas" loading="lazy"><figcaption>Hecho con cariño</figcaption></figure>
+      <figure class="g-wide"><img width="825" height="1100" src="img/sala.webp" alt="Interior de la sala con piso de madera, mats y la pared verde al fondo" loading="lazy" style="object-position:center 40%"><figcaption>Espacio para 18 mats</figcaption></figure>
+      <figure class="g-m-wide"><img width="825" height="1100" src="img/jardin.webp" alt="Ventanal de la sala que da al jardín" loading="lazy"><figcaption>Vista al jardín</figcaption></figure>
       <figure class="g-wide"><img width="1100" height="825" src="img/frente.webp" alt="Frente de la sala con un árbol y la puerta de vidrio" loading="lazy"><figcaption>La entrada</figcaption></figure>
     </div>
     <div class="sala-notes">
       <div><b>18 lugares</b><p>Grupos chicos para que la profe te vea y te corrija.</p></div>
-      <div><b>Mats y mantas</b><p>Si no tenés mat, usás uno de la sala.</p></div>
+      <div><b>Mats, bloques y mantas</b><p>Si no tenés mat, usás uno de la sala.</p></div>
       <div><b>Climatizada</b><p>Aire acondicionado y ventilador para todo el año.</p></div>
     </div>
   </div>
@@ -277,7 +282,7 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
   <div class="wrap">
     <div class="head"><span class="eyebrow">Clases de Vinyasa yoga</span><h2 class="h2">Clases de yoga para cada etapa</h2><p class="lead">Si nunca hiciste yoga, empezá por "Para comenzar". Si ya practicás, elegí según tu nivel. Tocá el botón de cada clase y te respondemos por WhatsApp.</p></div>
     <div class="cards">
-      <article class="card"><span class="tag t-start">Para comenzar</span><h3>Yoga inicial</h3><p>Para arrancar la mañana con energía. Aprendés las posturas base y a respirar con el movimiento.</p><div class="when">Miércoles y viernes · 8 a 9 h<small>Prof. Brune Picone</small></div><a class="btn btn-main" data-clase="Yoga inicial (mié y vie 8 h)" target="_blank" rel="noopener">Quiero esta clase</a></article>
+      <article class="card"><span class="tag t-start">Para comenzar</span><h3>Yoga inicial</h3><p>Se centra en flexibilidad y fuerza. Aprendés las posturas base y arrancás la mañana con energía.</p><div class="when">Miércoles y viernes · 8 a 9 h<small>Prof. Brune Picone</small></div><a class="btn btn-main" data-clase="Yoga inicial (mié y vie 8 h)" target="_blank" rel="noopener">Quiero esta clase</a></article>
       <article class="card"><span class="tag t-mid">Intermedia</span><h3>Práctica intermedia</h3><p>El cuerpo se mueve, la respiración guía y vas un poquito más profundo hacia vos.</p><div class="when">Lun y mié · 17:30 o 19 h<br>Mar y jue · 19 h<small>Prof. Ani Picone</small></div><a class="btn btn-main" data-clase="Práctica intermedia" target="_blank" rel="noopener">Quiero esta clase</a></article>
       <article class="card"><span class="tag t-adv">Avanzada</span><h3>Práctica avanzada</h3><p>Desafiante y consciente. Ideal para profes y practicantes con experiencia.</p><div class="when">Martes y jueves · 20:15 h<small>Prof. Ani Picone</small></div><a class="btn btn-main" data-clase="Práctica avanzada (mar y jue 20:15)" target="_blank" rel="noopener">Quiero esta clase</a></article>
       <article class="card"><span class="tag t-stretch">Stretching</span><h3>Stretch &amp; Flex</h3><p>Flexibilidad y movilidad con estiramientos y movimientos conscientes.</p><div class="when">Lunes y miércoles · 16 h<small>Prof. Giuli Capra</small></div><a class="btn btn-main" data-clase="Stretch & Flex (lun y mié 16 h)" target="_blank" rel="noopener">Quiero esta clase</a></article>
@@ -300,6 +305,7 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
       <button class="chip" id="f-other" data-f="other" aria-pressed="false">Stretching, niños y más</button>
     </div>
     <div class="days" id="days"></div>
+    <p class="arrive">Llegá 10 minutos antes de cada clase para acomodarte con calma.</p>
   </div>
 </section>
 
@@ -329,14 +335,14 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
 
 <section id="historia" style="background:var(--pink-soft)">
   <div class="wrap story">
-    <img width="825" height="1100" src="img/jardin.webp" alt="La sala abierta al jardín" loading="lazy">
+    <img width="825" height="1100" src="img/familia.webp" alt="Dos profesoras de Picone Yoga sentadas en un mat frente a la pared del elefante, una sostiene un cuenco de cuarzo" loading="lazy" style="object-position:center 70%">
     <div class="body">
       <span class="eyebrow">Nuestra historia</span>
       <h2 class="h2">Una sala hecha en familia</h2>
-      <p class="quote">Picone Yoga nació en casa, entre una mamá que enseña yoga hace muchos años y una hija que creció en el mat.</p>
       <p>En 2026 decidimos construir nuestro propio lugar, en el fondo de casa, en Villa Allende Golf. Lo levantamos de a poco, eligiendo cada madera y cada color, para que se sienta como llegar a un lugar conocido.</p>
-      <p>El elefante que nos representa lleva en sus patas las letras M, K, A y P. Camina tranquilo y con pasos firmes, como buscamos que sea cada práctica.</p>
-      <div class="initials" aria-hidden="true"><span>M</span><span>K</span><span>A</span><span>P</span></div>
+      <p class="quote">El elefante era el tatuaje de Meli. Para nosotras simboliza la familia.</p>
+      <p>En sus patas lleva las iniciales de las hermanas Picone:</p>
+      <div class="initials"><span><b>M</b>eli</span><span><b>K</b>ari</span><span><b>A</b>ni</span><span><b>P</b>ao</span></div>
     </div>
   </div>
 </section>
@@ -363,6 +369,7 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
     <details><summary>¿Hay yoga para adultos mayores y para niños?</summary><p>Sí. Adultos mayores: miércoles y viernes a las 9:30 h. Niños de 6 a 12 años: viernes a las 17 h. Jóvenes de 14 a 21 años: viernes a las 18:30 h.</p></details>
     <details><summary>Nunca hice yoga. ¿Puedo ir?</summary><p>Sí. La clase "Para comenzar" está pensada para eso: vas aprendiendo las posturas base a tu ritmo y la profe te acompaña en cada paso.</p></details>
     <details><summary>¿Qué tengo que llevar?</summary><p>Ropa cómoda y agua. Si tenés mat traelo; si no, usás uno de la sala.</p></details>
+    <details><summary>¿Con cuánta anticipación llego?</summary><p>Llegá 10 minutos antes de cada clase, así te acomodás con calma y empezamos todos juntos.</p></details>
     <details><summary>¿Cuántas personas hay por clase?</summary><p>Hasta 18. Así la profe puede verte y corregirte.</p></details>
     <details><summary>¿Cómo me inscribo?</summary><p>Escribinos por WhatsApp, te decimos si hay lugar en el horario que querés y cómo pagar el mes.</p></details>
     <details><summary>¿Puedo combinar horarios?</summary><p>Sí, mientras sean de tu nivel. Con el plan de 2 veces por semana o el pase libre elegís los días que te queden mejor.</p></details>
