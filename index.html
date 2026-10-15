@@ -114,13 +114,14 @@ section{padding-block:72px}
 .hero-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(251,240,242,.92);color:var(--olive-deep);font-size:13px;font-weight:600;padding:7px 14px;border-radius:999px}
 
 /* sala gallery */
-.gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px 260px;gap:14px}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:240px;grid-auto-flow:dense;gap:14px}
 .gallery figure{margin:0;border-radius:var(--r);overflow:hidden;position:relative}
 .gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
 .gallery figure:hover img{transform:scale(1.04)}
-.gallery figure:first-child{grid-row:span 2}
-.gallery figcaption{position:absolute;left:12px;bottom:12px;font-size:13px;font-weight:600;background:rgba(251,240,242,.9);color:var(--olive-deep);padding:6px 12px;border-radius:999px}
+.g-big{grid-column:span 2;grid-row:span 2}
+.g-tall{grid-row:span 2}
 .g-wide{grid-column:span 2}
+.gallery figcaption{position:absolute;left:12px;bottom:12px;font-size:13px;font-weight:600;background:rgba(251,240,242,.9);color:var(--olive-deep);padding:6px 12px;border-radius:999px}
 .sala-notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}
 .sala-notes div{border-top:1.5px solid var(--line);padding-top:14px}
 .sala-notes b{display:block;font-family:var(--display);font-size:24px;font-weight:600;font-style:italic}
@@ -192,6 +193,8 @@ section{padding-block:72px}
 .initials{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--display);font-style:italic;font-size:26px;color:var(--ink)}
 .initials b{color:var(--rose);font-weight:600;font-size:34px}
 
+.team-photo{margin:0 0 20px;border-radius:var(--r);overflow:hidden;aspect-ratio:3/2;max-width:100%}
+.team-photo img{width:100%;height:100%;object-fit:cover;display:block}
 .team{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .member{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
 .member h3{font-size:26px;font-style:italic}
@@ -232,10 +235,9 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
   section{padding-block:56px}
   .hero-grid{grid-template-columns:1fr;padding-block:32px 48px;gap:32px}
   .hero-photo{height:auto;width:100%;aspect-ratio:3/4;border-radius:16px}
-  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}
-  .gallery figure{aspect-ratio:3/4}
-  .gallery figure:first-child{grid-row:auto;grid-column:span 2;aspect-ratio:4/5}
-  .g-wide,.g-m-wide{grid-column:span 2;aspect-ratio:4/3!important}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:auto}
+  .gallery figure{aspect-ratio:3/4;grid-row:auto}
+  .g-big,.g-wide,.g-mw{grid-column:span 2;aspect-ratio:3/2!important}
   .sala-notes,.plans,.split,.story,.mani-grid{grid-template-columns:1fr}
   .pillars{grid-template-columns:1fr 1fr}
   .pillars li{font-size:19px;padding:16px 14px}
@@ -278,12 +280,13 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
   <div class="wrap">
     <div class="head"><span class="eyebrow">La sala</span><h2 class="h2">Un lugar cálido para practicar</h2><p class="lead">Piso de madera, luz natural, salida al jardín y un rincón con cuencos y Ganesha. Todo pensado para que llegues, te saques el día de encima y respires.</p></div>
     <div class="gallery">
-      <figure><img width="825" height="1100" src="img/altar.webp" alt="Pared verde con el elefante rosa de Picone Yoga, cuencos tibetanos y Ganesha" loading="lazy"><figcaption>El rincón de la meditación sonora</figcaption></figure>
-      <figure><img width="825" height="1100" src="img/puesto.webp" alt="Mat lila con bloque, manta y almohadilla para los ojos sobre el piso de madera" loading="lazy"><figcaption>Tu lugar, listo para practicar</figcaption></figure>
+      <figure class="g-big"><img width="1600" height="1067" src="img/practica.webp" alt="Alumnas estirando en una clase de yoga frente a la pared verde con el elefante de Picone Yoga" loading="lazy"><figcaption>Clase abierta de la inauguración</figcaption></figure>
+      <figure class="g-tall"><img width="825" height="1100" src="img/altar.webp" alt="Pared verde con el elefante rosa de Picone Yoga, cuencos tibetanos y Ganesha" loading="lazy"><figcaption>El rincón de la meditación sonora</figcaption></figure>
+      <figure class="g-wide"><img width="1600" height="1067" src="img/meditacion.webp" alt="Grupo sentado en ronda durante la meditación sonora en la sala" loading="lazy"><figcaption>Meditación sonora</figcaption></figure>
+      <figure><img width="825" height="1100" src="img/puesto.webp" alt="Mat lila con bloque, manta y almohadilla para los ojos sobre el piso de madera" loading="lazy"><figcaption>Tu lugar, listo</figcaption></figure>
+      <figure><img width="1600" height="1067" src="img/sala-lista.webp" alt="La sala preparada con mats, bloques rosas y mantas bajo el logo de Picone Yoga" loading="lazy"><figcaption>Espacio para 18 mats</figcaption></figure>
       <figure><img width="825" height="1100" src="img/regalos.webp" alt="Almohadillas de tela con la marca Picone Yoga, señaladores y velas" loading="lazy"><figcaption>Hecho con cariño</figcaption></figure>
-      <figure class="g-wide"><img width="825" height="1100" src="img/sala.webp" alt="Interior de la sala con piso de madera, mats y la pared verde al fondo" loading="lazy" style="object-position:center 40%"><figcaption>Espacio para 18 mats</figcaption></figure>
-      <figure class="g-m-wide"><img width="825" height="1100" src="img/jardin.webp" alt="Ventanal de la sala que da al jardín" loading="lazy"><figcaption>Vista al jardín</figcaption></figure>
-      <figure class="g-wide"><img width="1100" height="825" src="img/frente.webp" alt="Frente de la sala con un árbol y la puerta de vidrio" loading="lazy"><figcaption>La entrada</figcaption></figure>
+      <figure class="g-mw"><img width="1100" height="825" src="img/frente.webp" alt="Frente de la sala con un árbol y la puerta de vidrio" loading="lazy"><figcaption>La entrada</figcaption></figure>
     </div>
     <div class="sala-notes">
       <div><b>18 lugares</b><p>Grupos chicos para que la profe te vea y te corrija.</p></div>
@@ -364,6 +367,7 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
 <section id="equipo">
   <div class="wrap">
     <div class="head"><span class="eyebrow">El equipo</span><h2 class="h2">Las profes de la sala</h2><p class="lead">Somos un equipo chico: cada profe tiene su clase y conoce a sus alumnos por el nombre.</p></div>
+    <figure class="team-photo"><img width="1600" height="1067" src="img/equipo.webp" alt="Las profesoras de Picone Yoga sentadas juntas frente a la pared verde con el elefante rosa" loading="lazy"></figure>
     <div class="team">
       <article class="member"><div class="avatar" aria-hidden="true">A</div><div><h3>Ani Picone</h3><p class="role">Práctica intermedia y avanzada</p><p class="muted">Profesora de yoga hace muchos años y co-fundadora de la sala. Guía las clases de Vinyasa de la tarde y la noche.</p></div></article>
       <article class="member"><div class="avatar" aria-hidden="true">B</div><div><h3>Brune Picone</h3><p class="role">Para comenzar</p><p class="muted">Profesora de yoga y co-fundadora. Acompaña a quienes dan sus primeros pasos en el mat, a primera hora de la mañana.</p></div></article>
