@@ -10,16 +10,16 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://picone-yoga.vercel.app/">
 <meta property="og:locale" content="es_AR">
-<meta property="og:image:width" content="960">
-<meta property="og:image:height" content="1280">
-<meta property="og:image:alt" content="Sala Picone Yoga en Villa Allende con el elefante rosa en la pared verde">
+<meta property="og:image:width" content="1050">
+<meta property="og:image:height" content="1400">
+<meta property="og:image:alt" content="Clase en la sala Picone Yoga, Villa Allende, frente al elefante rosa">
 <meta property="og:site_name" content="Picone Yoga">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://picone-yoga.vercel.app/">
 <meta name="geo.region" content="AR-X">
 <meta name="geo.placename" content="Villa Allende, Córdoba">
-<meta property="og:image" content="https://picone-yoga.vercel.app/img/altar.webp">
+<meta property="og:image" content="https://picone-yoga.vercel.app/img/clase.webp">
 <link rel="icon" href="img/ele-rosa.webp">
 <meta name="theme-color" content="#7E8456">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,6 +126,19 @@ section{padding-block:72px}
 .sala-notes b{display:block;font-family:var(--display);font-size:24px;font-weight:600;font-style:italic}
 .sala-notes p{font-size:14px;color:var(--ink-soft)}
 
+.manifesto{background:var(--hero-bg);color:#F3EDE0}
+.manifesto .eyebrow{color:var(--pink)}
+.mani-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.mani-title{font-size:clamp(40px,5.4vw,68px);font-style:italic;color:#FBEFF2}
+.mani-title span{color:var(--pink);display:block}
+.mani-body{display:grid;gap:16px;font-size:17px;max-width:60ch}
+.way{margin-top:56px;padding-top:32px;border-top:1px solid rgba(241,194,205,.35);display:grid;gap:14px}
+.way-lead{font-size:17px}
+.pillars{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.pillars li{border:1.5px solid rgba(241,194,205,.55);border-radius:var(--r);padding:20px 18px;font-family:var(--display);font-style:italic;font-size:24px;line-height:1.15;color:#FBEFF2}
+.pillars b{font-weight:500}
+.way-foot{color:#E5DFC9;font-size:15px}
+.mani-close{margin-top:44px;font-family:var(--display);font-style:italic;font-size:clamp(26px,3.2vw,36px);color:var(--pink);text-align:center;text-wrap:balance}
 /* clases */
 #clases{background:var(--pink-soft)}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
@@ -223,7 +236,9 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
   .gallery figure{aspect-ratio:3/4}
   .gallery figure:first-child{grid-row:auto;grid-column:span 2;aspect-ratio:4/5}
   .g-wide,.g-m-wide{grid-column:span 2;aspect-ratio:4/3!important}
-  .sala-notes,.plans,.split,.story{grid-template-columns:1fr}
+  .sala-notes,.plans,.split,.story,.mani-grid{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr 1fr}
+  .pillars li{font-size:19px;padding:16px 14px}
   .story{gap:28px}
   .day{grid-template-columns:1fr;padding:18px}
   .slot{grid-template-columns:48px minmax(0,1fr) 54px;gap:10px}
@@ -253,7 +268,7 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
         </div>
         <div class="facts"><span>Villa Allende Golf</span><span>Hasta 18 por clase</span><span>Lunes a viernes</span></div>
       </div>
-      <figure class="hero-photo"><img width="825" height="1100" src="img/altar.webp" fetchpriority="high" alt="Pared verde de la sala con el elefante rosa de Picone Yoga, cuencos tibetanos y Ganesha" style="object-position:center top"><figcaption>Así es la salita</figcaption></figure>
+      <figure class="hero-photo"><img width="825" height="1100" src="img/clase.webp" fetchpriority="high" alt="Profesora de Picone Yoga guiando una práctica sentada frente a la pared verde con el elefante rosa" style="object-position:center 30%"><figcaption>Así se vive la salita</figcaption></figure>
     </div>
   </div>
 </header>
@@ -263,7 +278,7 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
   <div class="wrap">
     <div class="head"><span class="eyebrow">La sala</span><h2 class="h2">Un lugar cálido para practicar</h2><p class="lead">Piso de madera, luz natural, salida al jardín y un rincón con cuencos y Ganesha. Todo pensado para que llegues, te saques el día de encima y respires.</p></div>
     <div class="gallery">
-      <figure><img width="825" height="1100" src="img/clase.webp" alt="Profesora de Picone Yoga guiando una meditación frente a la pared verde con el elefante rosa" loading="lazy"><figcaption>Clase de inauguración</figcaption></figure>
+      <figure><img width="825" height="1100" src="img/altar.webp" alt="Pared verde con el elefante rosa de Picone Yoga, cuencos tibetanos y Ganesha" loading="lazy"><figcaption>El rincón de la meditación sonora</figcaption></figure>
       <figure><img width="825" height="1100" src="img/puesto.webp" alt="Mat lila con bloque, manta y almohadilla para los ojos sobre el piso de madera" loading="lazy"><figcaption>Tu lugar, listo para practicar</figcaption></figure>
       <figure><img width="825" height="1100" src="img/regalos.webp" alt="Almohadillas de tela con la marca Picone Yoga, señaladores y velas" loading="lazy"><figcaption>Hecho con cariño</figcaption></figure>
       <figure class="g-wide"><img width="825" height="1100" src="img/sala.webp" alt="Interior de la sala con piso de madera, mats y la pared verde al fondo" loading="lazy" style="object-position:center 40%"><figcaption>Espacio para 18 mats</figcaption></figure>
@@ -275,6 +290,32 @@ footer a{color:var(--pink);text-decoration:none;font-weight:600}
       <div><b>Mats, bloques y mantas</b><p>Si no tenés mat, usás uno de la sala.</p></div>
       <div><b>Climatizada</b><p>Aire acondicionado y ventilador para todo el año.</p></div>
     </div>
+  </div>
+</section>
+
+<section id="filosofia" class="manifesto">
+  <div class="wrap">
+    <div class="mani-grid">
+      <h2 class="mani-title">Un espacio para <span>volver a vos</span></h2>
+      <div class="mani-body">
+        <p>Picone Yoga nace del amor por el yoga y del deseo de compartir un espacio donde podamos conectar con nosotros mismos, habitar el presente y escucharnos con más atención.</p>
+        <p>Creemos que el yoga es mucho más que una práctica física: es una oportunidad para hacer una pausa, explorar nuestras posibilidades y conectar con el cuerpo, la respiración y lo que sentimos.</p>
+        <p>Creamos esta sala para que cada persona encuentre su propio camino, respetando sus tiempos y descubriendo los beneficios de una práctica consciente.</p>
+        <p>Un espacio de encuentro, movimiento y calma, donde compartir, aprender y sentirnos parte de una comunidad.</p>
+      </div>
+    </div>
+    <div class="way">
+      <span class="eyebrow">Nuestra forma de vivir el yoga</span>
+      <p class="way-lead">Cada práctica es una oportunidad para:</p>
+      <ul class="pillars">
+        <li><b>Habitar el cuerpo</b></li>
+        <li><b>Conectar con la respiración</b></li>
+        <li><b>Escucharte</b></li>
+        <li><b>Encontrar un momento propio</b></li>
+      </ul>
+      <p class="way-foot">Siempre respetando los tiempos y las posibilidades de cada persona.</p>
+    </div>
+    <p class="mani-close">Picone Yoga, un lugar para conectar con vos y volver a tu centro.</p>
   </div>
 </section>
 
